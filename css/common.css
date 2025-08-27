@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+/*-------------------------------------------------
+Common Style Sheet
+Version : 1.1
+-------------------------------------------------*/
+
+/* **************************************** *
+ * Color
+ * **************************************** */
+:root {
+  --netral-color-100: #0c0c0d;
+  --netral-color-150: #131315;
+  --netral-color-200: #19191b;
+  --netral-color-300: #303036;
+  --netral-color-400: #848490;
+  --netral-color-500: #e7e7e9;
+  --netral-color-600: #ebebef;
+  --netral-black: #000000;
+  --netral-white: #ffffff;
+  --netral-white-opa10: rgba(255, 255, 255, 0.1);
+  --netral-black-opa10: rgba(0, 0, 0, 0.1);
+}
+/* **************************************** *
+ * FONT
+ * **************************************** */
+@font-face {
+  font-family: 'Geometos';
+  src: url('fonts/Geometos.eot');
+  src: url('fonts/Geometos.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometos.woff2') format('woff2'),
+    url('fonts/Geometos.woff') format('woff'),
+    url('fonts/Geometos.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css');
+
+/* **************************************** *
+ * Common Style
+ * **************************************** */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  box-sizing: border-box;
+  /* -webkit-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out; */
+  /* line-height: 1.4; */
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  /* word-wrap: break-word; */
+  word-break: keep-all;
+  color: var(--netral-color-200);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+strong {
+  font-weight: bold;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
+caption,
+legend {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+textarea {
+  resize: none;
+}
+textarea.vert {
+  resize: vertical;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* TOP */
+
+/* **************************************** *
+  * Common css
+ * **************************************** */
+@media (max-width: 1920px) {
+  html {
+    font-size: 0.4166666vw;
+  }
+}
+
+html {
+  font-size: 8px;
+  /* root-font-size */
+  background: var(--netral-color-150);
+}
+body {
+  position: relative;
+}
+h1 {
+  color: var(--netral-color-600);
+  font-weight: 500;
+  font-size: 28px;
+  text-transform: capitalize;
+  line-height: 1;
+}
+h2 {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-size: 24px;
+  color: var(--netral-color-600);
+  font-weight: 500;
+}
+.description {
+  color: var(--netral-color-400);
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+/* **************************************** *
+ Header
+ * **************************************** */
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  backdrop-filter: blur(8px);
+}
+
+.progress-container {
+  width: 100%;
+  height: 2px;
+}
+
+.progress-container .progress-bar {
+  width: 0;
+  height: 1px;
+  background: var(--netral-color-600);
+  mix-blend-mode: difference;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(var(--netral-black-opa10));
+  border-bottom: 1px solid var(--netral-white-opa10);
+  padding: 2rem 10rem;
+  transition: all 0.4s;
+}
+
+nav#header-container.on {
+  background: var(--netral-color-100);
+  mix-blend-mode: normal;
+  transition: all 0.4s;
+  background: rgba(0, 0, 0, 0.6);
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  text-transform: uppercase;
+  gap: 24px;
+  align-items: center;
+}
+
+nav ul li a {
+  font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
+    '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  color: var(--netral-color-500);
+  transition: all 0.3s;
+}
+
+nav ul li a.on {
+  color: var(--netral-color-600);
+  position: relative;
+}
+nav ul li a:hover {
+  color: var(--netral-color-600);
+  transition: all 0.3s;
+}
+
+nav ul li a.on::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: var(--netral-color-600);
+  transform: translate(-50%, 0);
+  border-radius: 999px;
+}
+
+h2.article-title {
+  font-size: 28px;
+
+  font-family: 'Geometos', 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  color: var(--netral-white);
+  border-bottom: 1px solid var(--netral-white-opa10);
+  height: 6rem;
+  min-height: 48px;
+}
+
+.chip-body {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.chip-body .chip-contents {
+  font-size: 14px;
+  color: var(--netral-color-300);
+  text-transform: capitalize;
+}
+article.project
+  ul.project-body
+  .project-list
+  ul.chip-body
+  article.project
+  ul.project-body
+  .project-list
+  img {
+  width: 100%;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.project-list .project-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2px;
+}
+.project-list h3 {
+  font-size: 24px;
+  color: var(--netral-color-600);
+  font-weight: 500;
+}
+.project-list .project-date {
+  font-size: 14px;
+  color: var(--netral-color-400);
+}
+
+.project-list .description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--netral-color-400);
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* **************************************** *
+ * Footer
+ * **************************************** */
+
+footer {
+  font-size: 14px;
+  padding: 0 10rem;
+  line-height: 6;
+  color: #ffffff30;
+  border-top: 1px solid var(--netral-white-opa10);
+}
+
+/* **************************************** *
+ * Tablet
+ * **************************************** */
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 22px;
+  }
+  nav {
+    padding: 12px 24px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  footer {
+    padding: 0 24px;
+  }
+  nav ul li a {
+    color: #ededed;
+  }
+  nav ul li a::after {
+    display: none;
+  }
+  .project-list h3 {
+    font-size: 22px;
+    color: #e8e8e8;
+    font-weight: 500;
+  }
+}
+
+/* **************************************** *
+ * Mobile
+ * **************************************** */
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
