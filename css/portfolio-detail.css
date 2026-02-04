@@ -51,6 +51,10 @@ body.azure section.detail .hero-img {
   background-image: url(../images/azure/hero.jpg);
 }
 
+body.pricehuntclub section.detail .hero-img {
+  background-image: url(../images/PHC/01.jpg);
+}
+
 /* background layout0 */
 section.contents.cumulus .contents-layout0 {
   background-image: url(../images/visual/02.jpg);
@@ -302,6 +306,46 @@ section.contents .contents-layout3 .description {
 }
 section.contents .contents-layout3 h2 {
   width: 100%;
+}
+.contents-layout4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, minmax(100px, auto)); */
+  gap: 0rem 5rem;
+}
+.contents-layout4 img {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.contents-layout4 .img-box {
+  padding-top: 75%;
+  background: linear-gradient(#fffaee, #ffedd7);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.contents-layout4 .img-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38%;
+}
+
+.contents-layout4 .img-box.hi-dd img {
+  width: 58%;
+}
+
+.contents-layout4 .img-box.night {
+  background: #24154e;
+}
+
+.contents-layout4 .img-box.night img {
+  border: none;
+  width: 75%;
 }
 
 .other-projects {
