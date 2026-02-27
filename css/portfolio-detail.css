@@ -1,4 +1,13 @@
 /* 디테일 페이지별 히어로스타일 */
+
+body.safe-one section.detail .hero-img {
+  background-image: url(../images/safe-one/hero.jpg);
+}
+
+body.popsicle section.detail .hero-img {
+  background-image: url(../images/popsicle/hero.jpg);
+}
+
 body.creately section.detail .hero-img {
   background-image: url(../images/creately/hero.jpg);
 }
@@ -187,10 +196,22 @@ section.detail .information a.visit-site.close {
 }
 
 section.detail .metadata .date {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family:
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
   font-size: 16px;
   color: var(--netral-gray-600);
 }
@@ -203,7 +224,7 @@ section.detail .metadata .date {
 }
 .divider {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   height: 1px;
   background: var(--netral-white-opa10);
 }
@@ -212,7 +233,7 @@ section.contents {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
 }
 /* section.contents.grid-1440 {
@@ -349,10 +370,12 @@ section.contents .contents-layout3 h2 {
 }
 
 .other-projects {
-  padding: 6rem 10rem;
+  max-width: 1280px;
+  padding: 6rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 48px;
+  margin: 0 auto;
 }
 .dd-css-animation {
   top: 29%;
@@ -364,6 +387,11 @@ section.contents .contents-layout3 h2 {
   -webkit-animation: x 5s infinite;
   -moz-animation: x 5s infinite;
   -o-animation: x 5s infinite;
+}
+@media (max-width: 1340px) {
+  .contents-body {
+    padding: 10rem 24px;
+  }
 }
 
 @media (max-width: 1024px) {
