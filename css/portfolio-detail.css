@@ -4,6 +4,10 @@ body.safe-one section.detail .hero-img {
   background-image: url(../images/safe-one/hero.jpg);
 }
 
+body.interlock section.detail .hero-img {
+  background-image: url(../images/interlock/hero.jpg);
+}
+
 body.popsicle section.detail .hero-img {
   background-image: url(../images/popsicle/hero.jpg);
 }
