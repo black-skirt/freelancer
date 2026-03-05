@@ -1,5 +1,9 @@
 /* 디테일 페이지별 히어로스타일 */
 
+body.bound section.detail .hero-img {
+  background-image: url(../images/bound/hero.jpg);
+}
+
 body.safe-one section.detail .hero-img {
   background-image: url(../images/safe-one/hero.jpg);
 }
